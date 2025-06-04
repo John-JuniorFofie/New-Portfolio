@@ -311,7 +311,7 @@ nav ul li a.active::after {
 .cta-section {
     padding: 80px 0;
     text-align: center;
-    background-color: var(--light-bg);
+    background-color: var(--bg-color--);
 }
 
 .cta-section h2 {
@@ -345,9 +345,9 @@ nav ul li a.active::after {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+
 .project-footer {
-    background-color: var(--light-bg);
+    background-color: var(--bg-color--);
     padding: 60px 0 0;
 }
 

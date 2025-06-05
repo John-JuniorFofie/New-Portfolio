@@ -6,6 +6,7 @@
     <title>John Fofie Junior | Web Developer & UI/UX Designer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header>
@@ -101,43 +102,58 @@
             </div>
         </section>
 
-        <!-- <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="image-placeholder"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>E-commerce Website</h3>
-                            <p>A fully responsive e-commerce platform built with HTML, CSS, and JavaScript.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="image-placeholder"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Portfolio Template</h3>
-                            <p>A customizable portfolio template for creatives, built with WordPress.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="image-placeholder"></div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Mobile App UI</h3>
-                            <p>A fitness tracking mobile app UI designed in Figma.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
+        <section class="rank">
+            <div class="skills">
+            <div class="note">
+                <h3>MY SKILLS</h3>
+                <p>As a passionate and continously growing web developer,
+                 I have developed a solid foundation in both front-end and
+                 back-end technologies.I specialize in building responsive, 
+                user-friendly websites and web applications. I enjoy solving real-world 
+                problems with clean, efficient code and modern design practises.
+                </p>
             </div>
-        </section> -->
+            <div class="comp">
+              <div class="real"><h4>HTML</h4>
+            <h4>95%</h4>
+            </div>
+                <div class="line">
+                <div class="red"></div>
+                <div class="gray"></div>
+                </div>
+                <div class="real"><h4>WORDPRESS</h4>
+                    <h4>85%</h4>
+                    </div>
+                        <div class="line">
+                        <div class="red" id="cssred"></div>
+                        <div class="gray" id="cssgray"></div>
+                        </div>
+                        <div class="real"><h4>CSS</h4>
+                            <h4>85%</h4>
+                            </div>
+                                <div class="line">
+                                <div class="red" id="cssred"></div>
+                                <div class="gray" id="cssgray"></div>
+                                </div>
+                                <div class="real"><h4>JAVASCRIPT</h4>
+                                    <h4>75%</h4>
+                                    </div>
+                                        <div class="line">
+                                        <div class="red" id="jsred"></div>
+                                        <div class="gray" id="jsgray"></div>
+                                        </div>
+                                         <div class="real"><h4>FIGMA</h4>
+                                    <h4>95%</h4>
+                                    </div>
+                                        <div class="line">
+                                        <div class="red" id="fsred"></div>
+                                        <div class="gray" id="fsgray"></div>
+                                        </div>
+                                        </div>
+            
+        </div>
+
+        </section>
 
         <section id="contact" class="contact">
             <div class="container">
@@ -157,7 +173,7 @@
                     </form>
                     <div class="contact-info">
                         <h3>Contact Information</h3>
-                        <p><i class="fas fa-envelope"></i> johnfofie31@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> johnfofie31@gmail.com.com</p>
                         <p><i class="fas fa-phone"></i> +233 5036 65076</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-github"></i></a>
@@ -179,14 +195,14 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    // Set current year in footer
+
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Theme toggle functionality
+  
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     
-    // Check for saved theme preference or use system preference
+
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
         document.body.setAttribute('data-theme', 'dark');
@@ -196,7 +212,7 @@
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
 
-    // Toggle theme on button click
+
     themeToggle.addEventListener('click', function() {
         const currentTheme = document.body.getAttribute('data-theme');
         if (currentTheme === 'light') {
@@ -210,7 +226,7 @@
         }
     });
 
-    // Mobile menu toggle
+
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('nav');
     
@@ -219,7 +235,7 @@
         nav.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking a nav link
+  
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -230,7 +246,7 @@
         });
     });
 
-    // Smooth scrolling for anchor links
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -247,14 +263,11 @@
         });
     });
 
-    // Form submission
+
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // In a real application, you would send the form data to a server
-            // For this example, we'll just show an alert
             alert('Thank you for your message! I will get back to you soon.');
             contactForm.reset();
         });

@@ -272,6 +272,75 @@ section {
     color: var(--primary-color);
     transform: translateY(-3px);
 }
+.skills{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 70px;
+    padding: 5vh;
+    /* background-color:rgba(124, 124, 235, 0.301); */
+    height:fit-content;
+    width: 100%;
+}
+.note{
+    width: 30vw;
+    color:var(--text-color--);
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    gap:3vh;
+    line-height:30px;
+}
+.comp{
+    display: flex;
+      flex-wrap:wrap;
+    flex-direction: column;
+    gap: 2vh;
+}
+.real{
+    display: flex;
+      flex-wrap:wrap;
+    justify-content: space-between;
+    color:white;
+}
+.line{
+    display: flex;
+    color:white
+}
+.red{
+ height:13px;
+width: 500px;
+background-color:orangered;
+}
+.gray{
+   height:13px;
+    width:100px;
+    background-color:gray;   
+}
+#cssred{
+    height:13px;
+    width: 400px;;   
+}
+#cssgray{
+    height:13px;
+    width:200px;   
+}
+#jsred{
+   height:13px;
+    width:350px;   
+}
+#jsgray{
+   height:13px;
+    width:250px;   
+}
+#fred{
+   height:13px;
+    width: 500px;
+}
+#gfrey{
+ height:13px;
+    width:100px;
+}
 
 
 .skills-grid {
@@ -489,7 +558,7 @@ footer {
         button{
             width: 140px;
         }
-         .about-text{
+            .about-text{
         justify-content: center;
           p{
         text-align:center;
